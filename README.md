@@ -28,6 +28,13 @@
 
 
 
+## Pattern.
+* [Multi-Reactor.](https://www.google.com/search?q=multi+reactor+pattern&oq=pattern+multi-re&aqs=chrome.1.69i57j0.14644j0j7&sourceid=chrome&ie=UTF-8)
+
+
+
+
+
 ## Articles.
 
 
