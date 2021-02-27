@@ -7,6 +7,8 @@
 ## Contents at a Glance.
 * [About.](#about)
 * [Documentation.](#documentation)
+* [Reactive Programming.](https://github.com/descriptions-of-it-technologies/reactive-programming)
+* [Functional Reactive Programming.](https://github.com/descriptions-of-it-technologies/functional-reactive-programming)  
 * [Event Loop.](#event-loop) 
 * [Event Driven.](#event-driven)
 * [Event Bus.](#event-bus)
@@ -37,12 +39,42 @@
 
 
 ## Event Loop. 
+
+
+
+
+
 ## Event Driven. 
+
+
+
+
+
 ## Event Bus.
-разпределонная комуникационная шына
+* разпределонная комуникационная шына
+
+
+
+
+
 ## Vertical. 
+
+
+
+
+
 ## Vertex Core.
+
+
+
+
+
 ## Vertex Web.
+
+
+
+
+
 ## Pattern.
 * [Multi-Reactor.](https://www.google.com/search?q=multi+reactor+pattern&oq=pattern+multi-re&aqs=chrome.1.69i57j0.14644j0j7&sourceid=chrome&ie=UTF-8)
 
