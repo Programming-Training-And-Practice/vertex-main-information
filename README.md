@@ -1,4 +1,4 @@
-# Vert.x Main Information.
+# Vert.x
 
 
 
@@ -42,6 +42,10 @@
 
 
 
+## Workers. 
+
+
+
 
 
 ## Event Driven. 
@@ -51,6 +55,9 @@
 
 
 ## Event Bus.
+* Point to point
+* Request/Response 
+* Pub/Sub
 * разпределонная комуникационная шына
 
 
@@ -58,6 +65,17 @@
 
 
 ## Vertical. 
+
+
+
+
+## Verticles.
+* Standard
+  * Son aquellos que son asincronos
+* Worker
+  * creado especificamente para ejecutar operaciones sincronas
+* Multithread worker
+  * es semilar que 'worker' pero permite ejecutar las instancias concurrente
 
 
 
@@ -106,6 +124,8 @@
 
 
 ## Conferences.
+* [Curso Vert.x - Capítulo 1 - Paradigma Digital](https://www.youtube.com/watch?v=QKbntEUAO1E&ab_channel=ParadigmaDigital)
+* [Curso Vert.x - Capítulo 2 - Paradigma Digital](https://www.youtube.com/watch?v=pVsmdwgaUWE&ab_channel=ParadigmaDigital)
 
 
 
@@ -113,6 +133,22 @@
 
 ## Conference Speakers.
 
+
+
+
+
+## Pros.
+* Embedded event bus
+* Abstraction over Java Concurrency
+* Reactive
+* Polyglot
+
+
+
+
+
+## Cons.
+* 
 
 
 
