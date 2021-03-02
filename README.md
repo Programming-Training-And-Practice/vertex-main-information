@@ -108,8 +108,8 @@
 етот узел если он начнет пропадать может бить реплецырован на других узлах нашего кластера 
 и в том числе если другие узлы нашего кластера будут пропадать в етот узел тоже можна реплецыроватся
 
-`jps` java processes
-`kill -9 [processId]` kill proces   
+`jps` - show java processes
+`kill -9 [processId]` - kill proces   
 
 `vertx run [fileName] -ha -quorum 2`
 
