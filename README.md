@@ -34,11 +34,13 @@
 
 ## Documentation.
 * [VERT.X](https://vertx.io/)
-
+* [Cluster Manager.](https://vertx.io/docs/vertx-hazelcast/java/)
 
 
 
 ## Event Loop. 
+
+
 
 
 
@@ -77,6 +79,21 @@
 * Multithread worker
   * es semilar que 'worker' pero permite ejecutar las instancias concurrente
 
+
+
+
+
+## Cluster Manager.
+* [Hazelcast(default)](https://github.com/descriptions-of-it-technologies/hazelcast)
+* [Apache Zookeeper.](https://github.com/descriptions-of-it-technologies/zookeeper)
+* [Apache Ignite.](https://github.com/descriptions-of-it-technologies/apache-ignite)
+* [Infinispan.](https://github.com/descriptions-of-it-technologies/infinispan)
+
+
+
+
+
+## Cluster HA.
 
 
 
@@ -124,8 +141,7 @@
 
 
 ## Conferences.
-* [Curso Vert.x - Capítulo 1 - Paradigma Digital](https://www.youtube.com/watch?v=QKbntEUAO1E&ab_channel=ParadigmaDigital)
-* [Curso Vert.x - Capítulo 2 - Paradigma Digital](https://www.youtube.com/watch?v=pVsmdwgaUWE&ab_channel=ParadigmaDigital)
+* [Curso Vert.x - Paradigma Digital](https://www.youtube.com/playlist?list=PL2yjEVbRSX7WuD06zFOXmW_o2CPvCrf7t)
 
 
 
