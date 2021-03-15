@@ -14,3 +14,6 @@
 `vertx run [fileName] -ha -quorum 2`
 
 `java -jar fat.jar -ha` 
+
+`./gradlew run -PmainClass=[pathToMainClass]`
+`./gradlew run -PmainClass=chapter2.hello.HelloVerticle`
