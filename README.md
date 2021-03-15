@@ -13,8 +13,7 @@
 * [Event Driven.](#event-driven)
 * [Event Bus.](#event-bus)
 * [Vertical.](#vertical)
-* [Vertex Core.](#vertex-core)
-* [Vertex Web.](#vertex-web)
+* [Vertx Modules.]()
 * [Pattern.](#pattern)
 * [Commands.](#commands)
 * [Articles.](#articles)
@@ -98,13 +97,27 @@
 
 
 
-## Vertex Core.
+
+## Pros.
+* Embedded event bus
+* Abstraction over Java Concurrency
+* Reactive
+* Polyglot
 
 
 
 
 
-## Vertex Web.
+## Cons.
+* 
+
+
+
+
+
+## Vert.x Modules
+* [Vertex Core.](vertx-core.md)
+* [Vertex Web.](vertx-web.md)
 
 
 
@@ -117,20 +130,9 @@
 
 
 
-## Commands.
-`vertx run [fileName] -cluster` 
-флаг "-cluster"  придназначен для того чтобы днный Vertical мог принимать сообщения из других JVM 
+## Books.
 
-`vertx run [fileName] -ha` 
-етот узел если он начнет пропадать может бить реплецырован на других узлах нашего кластера 
-и в том числе если другие узлы нашего кластера будут пропадать в етот узел тоже можна реплецыроватся
 
-`jps` - show java processes
-`kill -9 [processId]` - kill proces   
-
-`vertx run [fileName] -ha -quorum 2`
-
-`java -jar fat.jar -ha` 
 
 
 
@@ -153,20 +155,8 @@
 
 
 
-## Pros.
-* Embedded event bus
-* Abstraction over Java Concurrency
-* Reactive
-* Polyglot
-
-
-
-
-
-## Cons.
-* 
-
-
-
-
 ## Help.
+
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
