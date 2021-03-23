@@ -158,7 +158,8 @@
 
 
 ## Articles.
-
+* [Vert.x microservices: an (opinionated) application](https://medium.com/@victorgil_91367/vert-x-microservices-an-opinionated-application-56e44c0b45b4)
+* []()
 
 
 
@@ -177,7 +178,3 @@
 
 
 ## Help.
-
-
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
