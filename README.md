@@ -177,4 +177,13 @@
 
 
 
+## Useful Links.
+* [What's the difference between the send and publish methods of Vertx's EventBus?](https://stackoverflow.com/questions/56715200/whats-the-difference-between-the-send-and-publish-methods-of-vertxs-eventbus)
+* [Vert.x microservices: an (opinionated) application](https://medium.com/@victorgil_91367/vert-x-microservices-an-opinionated-application-56e44c0b45b4)
+* []()
+
+
+
+
+
 ## Help.
