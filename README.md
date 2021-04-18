@@ -88,6 +88,22 @@
 * Worker verticles are a special form of verticles that do not execute on an event loop. Instead, they execute on worker 
   threads, that is, threads taken from special worker pools. You can define your own worker thread pools and deploy 
   worker verticles to them.
+* Worker verticles can be used to process blocking I/O and long-running operations.    
+
+
+
+
+
+## Worker thread pool. 
+
+
+
+
+## Context. 
+* Context data
+* It is possible to mix code with both Vert.x and non-Vert.x threads by using event-loop contexts.
+
+
 
 
 
