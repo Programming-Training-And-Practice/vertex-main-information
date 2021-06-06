@@ -38,6 +38,12 @@
 
 
 
+## The Vert.x instance.
+* The Vert.x instance is being shared by multiple verticles, and there is generally only one instance of Vertx per JVM process.
+
+
+
+
 ## Verticles.
 * Put simply, a verticle is the fundamental processing unit in Vert.x. The role of a verticle is to encapsulate a 
   technical functional unit for processing events, such as exposing an HTTP API and responding to requests, providing 
