@@ -44,70 +44,6 @@
 
 
 
-## Verticles.
-* Put simply, a verticle is the fundamental processing unit in Vert.x. The role of a verticle is to encapsulate a 
-  technical functional unit for processing events, such as exposing an HTTP API and responding to requests, providing 
-  a repository interface on top of a database, or issuing requests to a third-party system. Much like components in 
-  technologies like Enterprise JavaBeans, verticles can be deployed, and they have a life cycle.
-  Asynchronous programming is key to building reactive applications, since they have to scale, and verticles are 
-  fundamental in Vert.x for structuring (asynchronous) event-processing code and business logic.
-* verticles have private state that may be updated when receiving events, they can deploy other verticles, and they 
-  can communicate via message-passing (more on that in the next chapter). Verticles do not necessarily follow the orthodox 
-  definition of actors, but it is fair to consider Vert.x as being at least inspired by actors.
-* Standard
-  * Son aquellos que son asincronos
-* Worker
-  * creado especificamente para ejecutar operaciones sincronas
-* Multithread worker
-  * es semilar que 'worker' pero permite ejecutar las instancias concurrente
-* An each verticle receives its unique deployment ID. This is a string object and the deployment ID is represented in a UUID v4 format.
-
-
-
-
-
-## The life cycle of any Vertx verticle has following stages:
-1. The Vertx instance calls the init() method of a verticle. This method is already implemented in the AbstractVerticle 
-   class, although you have to provide your own implementation, if you use the Verticle interface, you have to provide 
-   your own implementation). It provides to the verticle references to Vertx and Context instances. Please note, that 
-   by default, there is one Vertx instance per JVM.
-2. The Vertx instance calls the start() method to execute its startup logic. Based on the Promise object’s result, it 
-   can either be successfully completed (which means, that the verticle is ready to deploy), either it can fail (which 
-   means, that the verticle would not be deployed)
-3. The Vertx instance deploys the verticle. An each verticle receives its unique deployment ID. This is a string object 
-   and the deployment ID is represented in a UUID v4 format.
-4. The Vertx instance calls the stop() method to execute a termination callback. This means, that this is a place to do 
-   work that is required before closing, for example, save data or clean used resources.
-5. The Vertx instance undeploys a verticle.
-
-
-
-
-
-## Event Loop. 
-* Handler callbacks are run from event-loop threads. It is important that code running on an event loop takes as little 
-  time as possible, so that the event-loop thread can have a higher throughput in the number of processed events. 
-  This is why no long-running or blocking I/O operations should happen on the event loop.
-* That being said, it may not always be easy to spot blocking code, especially when using third-party libraries. 
-  Vert.x provides a checker that detects when an event loop is being blocked for too long.
-* CONFIGURING THE VERT.X BLOCKED THREAD CHECKER
-  The time limit before the blocked thread checker complains is two seconds by default, but it can be configured to a 
-  different value. There are environments, such as embedded devices, where processing power is slower, and it is normal 
-  to increase the thread-checker threshold for them.
-  You can use system properties to change the settings:
-    * `-Dvertx.options.blockedThreadCheckInterval=5000` changes the interval to five seconds.
-    * `-Dvertx.threadChecks=false` disables the thread checker.
-  Note that this configuration is global and cannot be fine-tuned on a per-verticle basis.
-* By default, Vert.x creates twice the number of event-loop threads as CPU cores. If you have 8 cores, then a Vert.x 
-  application has 16 event loops. The assignment of verticles to event loops is done in a round-robin fashion.
-* It is possible to tweak how many event loops should be available, but it is not possible to manually allocate a given 
-  verticle to a specific event loop. This should never be a problem in practice, but in the worst case you can always 
-  plan the deployment order of verticles.
-* The basic rule when running code on an event loop is that it should not block, and it should run “fast enough.”
-* Vert.x provides two options for dealing with blocking code: worker verticles and the executeBlocking operation.
-
-
-
 
 ## Workers.
 * Worker verticles are a special form of verticles that do not execute on an event loop. Instead, they execute on worker 
@@ -135,23 +71,7 @@
 
 
 
-## Event Driven. 
-
-
-
-
-
-## Event Bus.
-* Point to point (single publisher and a single consumer)
-* Request/Response 
-* publish/subscribe ('broadcasting', 'single publisher to many consumers')
-* разпределонная комуникационная шына
-
-
-
-
-
-## Vertical. 
+## Event Driven.
 
 
 
@@ -186,13 +106,6 @@
 ## Cons.
 * 
 
-
-
-
-
-## Vert.x Modules
-* [Vertex Core.](vertx-core.md)
-* [Vertex Web.](vertx-web.md)
 
 
 
@@ -238,10 +151,6 @@
 
 
 
-
-
-## 
-* 
 
 
 ## Help.
